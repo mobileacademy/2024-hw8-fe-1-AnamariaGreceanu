@@ -1,0 +1,33 @@
+.board {
+    display: grid;
+    gap: 2px;
+    justify-content: center;
+}
+
+.square {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.square.opened {
+    background-color: #e0e0e0;
+    cursor: default;
+}
+
+.square.flagged {
+    background-color: #ffeb3b;
+}
+
+.square.bomb {
+    background-color: #f44336;
+    color: #fff;
+}
+
+
